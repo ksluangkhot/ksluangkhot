@@ -64,14 +64,14 @@
 }
 
 /* https://www.w3schools.com/howto/howto_css_image_center.asp */
-.imgcenter {
+.imagecenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 350px;
 }
 /* https://www.w3schools.com/css/css_navbar_horizontal.asp */
-ul {
+.navbar {
   list-style-type: none;
   margin: 0;
   margin-block-start: 1.5em;
@@ -83,7 +83,7 @@ ul {
   background-color: #737373;
 }
 
-li {
+.navbaritem {
   float: left;
 }
 
@@ -102,4 +102,139 @@ li a:hover:not(.active) {
 
 .active {
   background-color: #66b3ff;
+}
+
+.title {
+	display: block;
+    text-align: center;
+    font-family: "Veranda", Arial, sans-serif;
+    color: #737373;
+    font-size: 20px;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+}
+
+.mainparagraph {
+	font-family: "Helvetica", Arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+	margin-inline-start: 20px;
+}
+
+.text {
+	font-family: "Helvetica", Arial, sans-serif;
+	font-size: 16px;
+	margin-block-start: 0.5em;
+	margin-block-end: 0.5em;
+	margin-inline-start: 40px;
+}
+
+/* https://www.w3schools.com/css/css_grid_container.asp */
+.container-grid {
+  display: grid;
+  grid-template-columns: 264px 1000px; /*columns widths*/
+  height: 40vh;
+}
+
+.col-1 {
+	height: 100%;
+	background-color: #737373;
+}
+
+.col-2 {
+  background-color: transparent;
+}
+
+.imgcenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-inline-start: 80px;
+  height: 158px;
+}
+
+/* https://stackoverflow.com/questions/14821087/horizontal-line-and-right-way-to-code-it-in-html-css */
+.sideline {
+	height:1px; 
+	background: #66b3ff;
+	font-family: "Helvetica", Arial, sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	margin-block-start: 1.5em;
+	margin-block-end: 1.5em;
+	margin-inline-start: auto;
+	margin-inline-end; auto;
+}
+.mainline {
+	height:1px; 
+	background: #66b3ff;
+	font-family: "Helvetica", Arial, sans-serif;
+	font-size: 22px;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	margin-block-start: 1.5em;
+	margin-block-end: 1.5em;
+	margin-inline-start: auto;
+	margin-inline-end: 20px;
+}
+
+.close {
+	display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 80px;
+}
+
+.nogap {
+	display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.b {
+  font-family:"Helvetica", Arial, sans-serif;
+  color: black;
+  font-size: 16px;
+  margin-inline-end: 20px;
+}
+
+.c {
+	display: block;
+	font-family:"Helvetica", Arial, sans-serif;
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: left;
+}
+
+.d {
+	display: block;
+	font-family:"Helvetica", Arial, sans-serif;
+	color: black;
+	font-size: 14px;
+	text-align: left;
+}
+
+.box {
+	height: 222px;
+}
+
+.box2 {
+	height: 169px;
+}
+
+.box3 {
+	height: 450px;
 }
