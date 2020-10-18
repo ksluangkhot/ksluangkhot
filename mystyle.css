@@ -163,13 +163,13 @@ li a:hover:not(.active) {
 	height:1px; 
 	background: #66b3ff;
 	font-family: "Helvetica", Arial, sans-serif;
-	font-size: 20px;
+	font-size: 22px;
 	color: white;
 	text-align: center;
 	margin-block-start: 1.5em;
 	margin-block-end: 1.5em;
 	margin-inline-start: auto;
-	margin-inline-end; auto;
+	margin-inline-end: auto;
 }
 .mainline {
 	height:1px; 
