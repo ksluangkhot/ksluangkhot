@@ -155,8 +155,20 @@ li a:hover:not(.active) {
   margin-left: auto;
   margin-right: auto;
   margin-inline-start: 80px;
-  height: 118px;
+  height: 122px;
 }
+.box {
+	height: 222px;
+}
+
+.box2 {
+	height: 177px;
+}
+
+.box3 {
+	height: 490px;
+}
+
 
 /* https://stackoverflow.com/questions/14821087/horizontal-line-and-right-way-to-code-it-in-html-css */
 .sideline {
@@ -237,16 +249,4 @@ li a:hover:not(.active) {
 	color: black;
 	font-size: 14px;
 	text-align: left;
-}
-
-.box {
-	height: 222px;
-}
-
-.box2 {
-	height: 177px;
-}
-
-.box3 {
-	height: 450px;
 }
