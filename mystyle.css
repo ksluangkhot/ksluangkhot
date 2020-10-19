@@ -37,13 +37,13 @@
 /* Ensure paragraphs are adequately spaced out from each other and each header using the margin-top and margin-bottom properties https://www.w3schools.com/css/css_margin.asp */
 /* Font type is the same for all paragraphs to ensure consistency */
 .paragraph {
+	display: block;
 	font-family: "Helvetica", Arial, sans-serif;
 	font-size: 16px;
 	font-weight: bold;
-	width: 875px;
 	margin-top: 0.5em;
 	margin-bottom: 2em;
-	margin-left: 100px;
+	margin-left: 90px;
 }
 
 /* Paragraph will nearly fill the entire width of the page */
