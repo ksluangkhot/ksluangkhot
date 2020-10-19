@@ -1,3 +1,7 @@
+/* Main header at the top of the page */
+/* Biggest font size on the entire page */
+/* Colour and font type match the design of the page https://www.w3schools.com/css/css_colors.asp*/
+/* https://www.w3schools.com/css/css_font.asp */
 .header {
 	display: block;
     text-align: center;
@@ -11,6 +15,10 @@
     margin-right: auto;
 }
 
+/* Subheader for the different sections in the 'About Me' page */
+/* Placed below the navigation bar at the same indentation for each section */
+/* Different colour from the text in each paragraph, but same colour at the header https://www.w3schools.com/css/css_colors.asp*/
+/* Font type is same as the header https://www.w3schools.com/css/css_font.asp */
 .subheader {
 	display: block;
 	text-align: left;
@@ -24,6 +32,10 @@
     margin-right: auto;
 }
 
+/* Specify the width of the paragraph (element) to ensure it does not appear too close to the image float on the right: */
+/* Paragraph will appear indented from the subheader due to the margin-left property */
+/* Ensure paragraphs are adequately spaced out from each other and each header using the margin-top and margin-bottom properties https://www.w3schools.com/css/css_margin.asp */
+/* Font type is the same for all paragraphs to ensure consistency */
 .paragraph {
 	font-family: "Helvetica", Arial, sans-serif;
 	font-size: 16px;
@@ -34,6 +46,9 @@
 	margin-left: 100px;
 }
 
+/* Paragraph will nearly fill the entire width of the page */
+/* Paragraph will appear indented from the subheader due to the margin-left property */
+/* Ensure paragraphs are adequately spaced out from each other and each header using the margin-top and margin-bottom properties https://www.w3schools.com/css/css_margin.asp */
 .fullparagraph {
 	font-family: "Helvetica", Arial, sans-serif;
 	font-size: 16px;
@@ -44,37 +59,46 @@
 	margin-right: 100px;
 }
 
+/* Specify the width of the paragraph (element) and center the paragraph using the auto value for margin: https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_auto */
 .centerparagraph {
 	font-family: "Helvetica", Arial, sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	width: 700px;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	margin-left: 300px;
+	margin: auto;
 }
 
-/* https://www.w3schools.com/css/css_float.asp */
+/* Image floats to the right of the text https://www.w3schools.com/css/css_float.asp */
 .imgright {
   float: right;
 }
 
+/* Want images to be indented at a certain location on the page, not at the center or to the left or right */
+/* Use CSS margins to create space on the left side of the image and space out the image from the paragraph: https://www.w3schools.com/css/css_margin.asp */
 .imgindent {
   margin-left: 100px;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
+/* Want images to be indented at a certain location on the page, not at the center or to the left or right */
+/* Use CSS margins to create space on the left side of the image and space out the image from the paragraph: https://www.w3schools.com/css/css_margin.asp */
 .altimgindent {
   margin-left: 300px;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
-/* https://www.w3schools.com/howto/howto_css_image_center.asp */
+/* Place image in the center of the page https://www.w3schools.com/howto/howto_css_image_center.asp */
 .imagecenter {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 350px;
 }
-/* https://www.w3schools.com/css/css_navbar_horizontal.asp */
+/* Horizontal navigation bar placed near the top of the page */
+/* Instructions to create a horizontal navigation bar taken from https://www.w3schools.com/css/css_navbar_horizontal.asp */
+/* Display and margins changed to separate the navigation bar from the header and rest of page */
 .navbar {
 	display: block;
   list-style-type: none;
@@ -87,10 +111,12 @@
   background-color: #737373;
 }
 
+/* Use float to ensure list items are placed next to each other */
 .navbaritem {
   float: left;
 }
 
+/* Change font and text colour of the list items to match design of the page */
 li a {
   display: block;
   font-family:"Verdana", Arial, sans-serif;
@@ -100,15 +126,20 @@ li a {
   text-decoration: none;
 }
 
+/* Change the link color to #111 (black) on hover */
 li a:hover:not(.active) {
   background-color: #111;
 }
 
+/* Create an "active" class and assign it to the current link to indicate to the user which page they are on */
 .active {
   background-color: #66b3ff;
 }
 
-.title {
+/* Center the text using the auto value for margin: https://www.w3schools.com/css/tryit.asp?filename=trycss_margin_auto */
+/* Different colour from the text in each paragraph, but same colour as the header https://www.w3schools.com/css/css_colors.asp*/
+/* Font type is same as the header https://www.w3schools.com/css/css_font.asp */
+.personal {
 	display: block;
     text-align: center;
     font-family: "Veranda", Arial, sans-serif;
@@ -120,6 +151,9 @@ li a:hover:not(.active) {
     margin-right: auto;
 }
 
+/* Paragraph will nearly fill the entire width of the page */
+/* Paragraph will appear indented due to the margin-left property */
+/* Ensure paragraphs are adequately spaced out from each other and each header using the margin-top and margin-bottom properties https://www.w3schools.com/css/css_margin.asp */
 .mainparagraph {
 	font-family: "Helvetica", Arial, sans-serif;
 	font-size: 18px;
@@ -129,30 +163,27 @@ li a:hover:not(.active) {
 	margin-left: 20px;
 }
 
-.text {
-	font-family: "Helvetica", Arial, sans-serif;
-	font-size: 16px;
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-	margin-left: 40px;
-}
-
-/* https://www.w3schools.com/css/css_grid_container.asp */
+/* Create different sized columns to reflect the design of the resume template */
+/* Create a grid container with two different sized columns https://www.w3schools.com/css/css_grid_container.asp */
+/* First column on the left is smaller in width than the second column on the right (main section of resume) */
+/* All text and resume components will be contained within these grid columns */
 .container-grid {
   display: grid;
-  grid-template-columns: 264px 1000px; /*columns widths fit to display of my laptop (13" Macbook)*/
+  grid-template-columns: 264px 1000px; /*columns widths fit to display of a 13" Macbook Pro */
   height: 40vh;
 }
 
+/*Column on the left, which is 264px in width, will have a background colour that matches the colour scheme of the resume and a height that extends to the bottom of the page */
+/* Column is given a relative length of 100%, which is relative to the height of the page (the parent element) https://www.w3schools.com/cssref/css_units.asp */
 .col-1 {
 	height: 100%;
 	background-color: #737373;
 }
-
+/*Column on the right, which is 1000px in width, will have a transparent background and extends to the bottom of the page */
 .col-2 {
   background-color: transparent;
 }
-
+/* Center the headshot image that is placed at the top of the left columm https://www.w3schools.com/howto/howto_css_image_center.asp */
 .imgcenter {
 	display: block;
 	margin-top: 40px;
@@ -160,19 +191,11 @@ li a:hover:not(.active) {
 	margin-left: 80px;
 	height: 122px;
 }
-.box {
-	height: 222px;
-}
 
-.box2 {
-	height: 177px;
-}
-
-.box3 {
-	height: 490px;
-}
-
-/* https://stackoverflow.com/questions/14821087/horizontal-line-and-right-way-to-code-it-in-html-css */
+/* Create horizontal lines that run across the page to separate sections of the resume */
+/* Instructions to create a horizontal line without using the <hr> tag were taken from https://stackoverflow.com/questions/14821087/horizontal-line-and-right-way-to-code-it-in-html-css */
+/* Line created to place in the left column (.col-1) and text properties defined for the subheadings that will be placed directly under the line */
+/* Colours of the line and text match the overall design of the webpage */
 .sideline {
 	height:1px; 
 	background: #66b3ff;
@@ -185,6 +208,23 @@ li a:hover:not(.active) {
 	margin-right: auto;
 	margin-left: auto;
 }
+
+/* The horizontal lines in the left column (.col-1) must align with the horizontal lines in the right column (.col-2) */
+/* Horizontal lines and accompanying text can be placed in block elements where the height dictates where the next horizontal line starts https://www.w3schools.com/html/html_blocks.asp */
+/* Display and block heights optimized for a 13' Macbook Pro, may not look aligned on other types of displays */
+.box {
+	height: 222px;
+}
+
+.box2 {
+	height: 177px;
+}
+
+.box3 {
+	height: 490px;
+}
+/* Line created to place in the right container grid (column 2) and text properties defined for the subheadings that will be placed directly under the line */
+/* Same line properties as .sideline, but text properties changes to match the text of the resume */
 .mainline {
 	height:1px; 
 	background: #66b3ff;
@@ -198,7 +238,9 @@ li a:hover:not(.active) {
 	margin-left: auto;
 	margin-right: 20px;
 }
-
+/* Resume contains lists of items that are organized within each section */
+/* Create a list style that does not have a top margin to ensure that the unordered list is not separated from the list above https://www.w3schools.com/css/css_list.asp */
+/* List has items that are further indented (start to the right of the page) than the previous list */
 .close {
 	display: block;
     list-style-type: disc;
@@ -208,7 +250,8 @@ li a:hover:not(.active) {
     margin-left: 0px;
     padding-left: 80px;
 }
-
+/* Create a list style that does not have a top or bottom margin to ensure that the unordered list is not separated from the list above or below it https://www.w3schools.com/css/css_list.asp */
+/* No gaps between list items from different lists https://www.w3schools.com/css/css_margin.asp */
 .nogap {
 	display: block;
     list-style-type: disc;
@@ -218,7 +261,8 @@ li a:hover:not(.active) {
     margin-right: 20px;
     padding-left: 40px;
 }
-
+/* Create a list style that has top and bottom margins to ensure that there is space between unordered lists and other elements such as headers and paragraph https://www.w3schools.com/css/css_list.asp */
+/* Space between list items from different lists and elements https://www.w3schools.com/css/css_margin.asp */
 .surround {
 	display: block;
     list-style-type: disc;
@@ -228,14 +272,17 @@ li a:hover:not(.active) {
     margin-right: 20px;
     padding-left: 50px;
 }
-
+/* List items will have the disc marker (default) https://www.w3schools.com/css/css_list.asp*/
+/* List items will wrap around the page due to margin on the right https://www.w3schools.com/css/css_margin.asp */
 .b {
   font-family:"Helvetica", Arial, sans-serif;
   color: black;
   font-size: 16px;
   margin-right: 20px;
 }
-
+/* Biggest text size for list items, remove markers for list items by changing the display to block https://www.w3schools.com/css/css_list.asp*/
+/* Absolute size of text in pixels: https://www.w3schools.com/css/css_font_size.asp */
+/* Apply to list items individually using the 'c' class */
 .c {
 	display: block;
 	font-family:"Helvetica", Arial, sans-serif;
@@ -244,7 +291,9 @@ li a:hover:not(.active) {
 	font-weight: bold;
 	text-align: left;
 }
-
+/* Smallest text size for list items, remove markers for list items by changing the display to block https://www.w3schools.com/css/css_list.asp*/
+/* Absolute size of text in pixels: https://www.w3schools.com/css/css_font_size.asp */
+/* Apply to list items individually using the 'd' class */
 .d {
 	display: block;
 	font-family:"Helvetica", Arial, sans-serif;
