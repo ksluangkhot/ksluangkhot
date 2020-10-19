@@ -274,7 +274,7 @@ li a:hover:not(.active) {
 }
 /* List items will have the disc marker (default) https://www.w3schools.com/css/css_list.asp*/
 /* List items will wrap around the page due to margin on the right https://www.w3schools.com/css/css_margin.asp */
-.b {
+.discmark {
   font-family:"Helvetica", Arial, sans-serif;
   color: black;
   font-size: 16px;
@@ -283,7 +283,7 @@ li a:hover:not(.active) {
 /* Biggest text size for list items, remove markers for list items by changing the display to block https://www.w3schools.com/css/css_list.asp*/
 /* Absolute size of text in pixels: https://www.w3schools.com/css/css_font_size.asp */
 /* Apply to list items individually using the 'c' class */
-.c {
+.biglist {
 	display: block;
 	font-family:"Helvetica", Arial, sans-serif;
 	color: black;
@@ -294,7 +294,7 @@ li a:hover:not(.active) {
 /* Smallest text size for list items, remove markers for list items by changing the display to block https://www.w3schools.com/css/css_list.asp*/
 /* Absolute size of text in pixels: https://www.w3schools.com/css/css_font_size.asp */
 /* Apply to list items individually using the 'd' class */
-.d {
+.smalllist {
 	display: block;
 	font-family:"Helvetica", Arial, sans-serif;
 	color: black;
