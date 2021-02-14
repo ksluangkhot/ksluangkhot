@@ -23,12 +23,6 @@
             margin-left: 5%;
             font-size: 15px;
         }
-        li{
-            font-family: "Helvetica", Arial, sans-serif;
-            font-size: 15px;
-            margin-right: 5%;
-            font-weight: bold;
-        }
         #viewDiv {
             height: 100%;
             width: 100%;
@@ -44,8 +38,8 @@
             });
             const view = new MapView({
                 map: map,
-                center: [127.88623897440274, 36.64104370345627],
-                zoom: 6,
+                center: [132.00111993363467, 4.159099619099951],
+                zoom: 2,
                 container: "viewDiv"
             });
             const graphicsLayer = new GraphicsLayer();
@@ -53,7 +47,7 @@
             // List of bridges taken from: https://travel-blue.com/magazine/love-lock-guide-romantic-bridges-across-europe/
             const padlockSymbol = {
                 type: "picture-marker",
-                url: "",
+                url: "https://raw.githubusercontent.com/kluangkhflemingc/kluangkhflemingc.github.io/master/images/baby.png",
                 width: "25px",
                 height: "25px"
             };
@@ -194,6 +188,7 @@
 </head>
 <body>
     <h1>Where were Stray Kids Born?</h1>
+    <p>Click on the baby icons to find out where each stray kid member was born!</p>
     <div id="viewDiv"></div>
 </body>
 </html>
