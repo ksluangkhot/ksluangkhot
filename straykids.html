@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
+    <title>Stray Kids</title>
+    <style>
+        html,
+        body {
+            padding: 0;
+            margin: 0;
+            height: 100%;
+            width: 100%;
+        }
+        h1 {
+            font-family: "Helvetica", Arial, sans-serif;
+            font-size: 25px;
+            text-align: center;
+        }
+        p {
+            font-family: "Helvetica", Arial, sans-serif;
+            text-align: center;
+            margin-right: 5%;
+            margin-left: 5%;
+            font-size: 15px;
+        }
+        li{
+            font-family: "Helvetica", Arial, sans-serif;
+            font-size: 15px;
+            margin-right: 5%;
+            font-weight: bold;
+        }
+        #viewDiv {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://js.arcgis.com/4.18/esri/themes/light/main.css">
+    <script src="https://js.arcgis.com/4.18/"></script>
+    <script>
+        require(["esri/config", "esri/Map", "esri/views/MapView", "esri/Graphic", "esri/layers/GraphicsLayer"], function (esriConfig,Map,MapView, Graphic, GraphicsLayer) {
+            esriConfig.apiKey = "AAPKc3baf0a1b95b422d873b7e1aa0807a96FIuFAeylMkv9h2L7sGTvFNItn38IGoh2SUs5OU8xMNALYpgP5aKsYi6t1m7V5VyX";
+            const map = new Map({
+                basemap: "arcgis-streets"
+            });
+            const view = new MapView({
+                map: map,
+                center: [127.88623897440274, 36.64104370345627],
+                zoom: 6,
+                container: "viewDiv"
+            });
+            const graphicsLayer = new GraphicsLayer();
+            map.add(graphicsLayer);
+            // List of bridges taken from: https://travel-blue.com/magazine/love-lock-guide-romantic-bridges-across-europe/
+            const padlockSymbol = {
+                type: "picture-marker",
+                url: "",
+                width: "25px",
+                height: "25px"
+            };
+            const popupTemplate = {
+                title: "{Name}",
+                content: "{Caption}"
+            }
+            const bangchan = {
+                type: "point",
+                longitude: 126.98748029734588,
+                latitude: 37.560118580512665
+            };
+            const bangchanAttributes = {
+                Name: "Bang Chan (방찬)",
+                Caption: "Born on October 3, 1997 in Seoul, South Korea."
+            }
+            const bangchanLock = new Graphic({
+                geometry: bangchan,
+                symbol: padlockSymbol,
+                attributes: bangchanAttributes,
+                popupTemplate: popupTemplate
+            });
+            const leeknow = {
+                type: "point",
+                longitude: 126.60832366683151,
+                latitude: 37.72425813033522
+            };
+            const leeknowAttributes = {
+                Name: "Lee Know (이민호)",
+                Caption: "Born on October 25, 1998 in Gimpo, South Korea."
+            }
+            const leeknowLock = new Graphic({
+                geometry: leeknow,
+                symbol: padlockSymbol,
+                attributes: leeknowAttributes,
+                popupTemplate: popupTemplate
+            });
+            const changbin = {
+                type: "point",
+                longitude: 127.22101925759837,
+                latitude: 37.2221902215644
+            };
+            const changbinAttributes = {
+                Name: "Changbin (서창빈)",
+                Caption: "Born on August 11, 1999 in Yongin, South Korea."
+            }
+            const changbinLock = new Graphic({
+                geometry: changbin,
+                symbol: padlockSymbol,
+                attributes: changbinAttributes,
+                popupTemplate: popupTemplate
+            });
+            const hyunjin = {
+                type: "point",
+                longitude: 126.98748029734588,
+                latitude: 37.560118580512665
+            };
+            const hyunjinAttributes = {
+                Name: "Hyunjin (황현진)",
+                Caption: "Born on March 20, 2000 in Seoul, South Korea."
+            }
+            const hyunjinLock = new Graphic({
+                geometry: hyunjin,
+                symbol: padlockSymbol,
+                attributes: hyunjinAttributes,
+                popupTemplate: popupTemplate
+            });
+            const han = {
+                type: "point",
+                longitude: 126.70116073801856,
+                latitude: 37.4547598072733
+            };
+            const hanAttributes = {
+                Name: "Han (한지성)",
+                Caption: "Born on September 14, 2000 in Incheon, South Korea."
+            }
+            const hanLock = new Graphic({
+                geometry: han,
+                symbol: padlockSymbol,
+                attributes: hanAttributes,
+                popupTemplate: popupTemplate
+            });
+            const felix = {
+                type: "point",
+                longitude: 151.20874029655144,
+                latitude: -33.83497434749475
+            };
+            const felixAttributes = {
+                Name: "Felix (이용복)",
+                Caption: "Born on September 15, 2000 in Sydney, Australia."
+            }
+            const felixLock = new Graphic({
+                geometry: felix,
+                symbol: padlockSymbol,
+                attributes: felixAttributes,
+                popupTemplate: popupTemplate
+            });
+            const seungmin  = {
+                type: "point",
+                longitude: 126.98748029734588,
+                latitude: 37.560118580512665
+            };
+            const seungminAttributes = {
+                Name: "Seungmin (김승민)",
+                Caption: "Born on September 22, 2000 in Seoul, South Korea."
+            }
+            const seungminLock = new Graphic({
+                geometry: seungmin,
+                symbol: padlockSymbol,
+                attributes: seungminAttributes,
+                popupTemplate: popupTemplate
+            });
+            const jeongin  = {
+                type: "point",
+                longitude: 129.04501073547746,
+                latitude: 35.15987856796529
+            };
+            const jeonginAttributes = {
+                Name: "I.N. (양정인)",
+                Caption: "Born on February 8, 2001 in Busan, South Korea."
+            }
+            const jeonginLock = new Graphic({
+                geometry: jeongin,
+                symbol: padlockSymbol,
+                attributes: jeonginAttributes,
+                popupTemplate: popupTemplate
+            });
+            graphicsLayer.add(bangchanLock);
+            graphicsLayer.add(leeknowLock);
+            graphicsLayer.add(changbinLock);
+            graphicsLayer.add(hyunjinLock);
+            graphicsLayer.add(hanLock);
+            graphicsLayer.add(felixLock);
+            graphicsLayer.add(seungminLock);
+            graphicsLayer.add(jeonginLock);
+        });
+    </script>
+</head>
+<body>
+    <h1>Where were Stray Kids Born?</h1>
+    <div id="viewDiv"></div>
+</body>
+</html>
